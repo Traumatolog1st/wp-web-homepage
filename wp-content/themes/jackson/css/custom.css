@@ -1,0 +1,440 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 12, ../components/sass/custom.scss */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Open Sans, sans-serif;
+  background: #162241;
+}
+
+/* line 20, ../components/sass/custom.scss */
+header.header-page {
+  background: url("../img/header_bg.jpg");
+  background-size: cover;
+  height: 950px;
+}
+/* line 25, ../components/sass/custom.scss */
+header.header-page:after {
+  content: '';
+}
+/* line 29, ../components/sass/custom.scss */
+header.header-page .top-header {
+  height: 215px;
+  position: relative;
+}
+/* line 33, ../components/sass/custom.scss */
+header.header-page .top-header .logo, header.header-page .top-header .menu, header.header-page .top-header .search {
+  display: inline-block;
+}
+/* line 37, ../components/sass/custom.scss */
+header.header-page .top-header .logo {
+  position: absolute;
+  padding: 74px 0 0 96px;
+}
+/* line 42, ../components/sass/custom.scss */
+header.header-page .top-header .search {
+  height: 215px;
+  font-family: Open Sans, serif;
+  position: inherit;
+  float: right;
+  padding: 0 88px 0 15px;
+}
+/* line 49, ../components/sass/custom.scss */
+header.header-page .top-header .search form {
+  position: relative;
+  height: 28px;
+  width: 193px;
+  top: 50%;
+  margin-top: -14px;
+}
+/* line 56, ../components/sass/custom.scss */
+header.header-page .top-header .search form .searchinput {
+  border: 0;
+  font-size: 14px;
+  height: 28px;
+  width: 193px;
+  outline: none;
+  background: url("../img/search.png") no-repeat;
+  padding: 0 0 0 23px;
+}
+/* line 64, ../components/sass/custom.scss */
+header.header-page .top-header .search form .searchinput::-webkit-input-placeholder {
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-style: italic;
+  font-variant: normal;
+  font-weight: 400;
+  color: #dedada;
+}
+/* line 74, ../components/sass/custom.scss */
+header.header-page .top-header .search form button {
+  width: 29px;
+  height: 28px;
+  color: #1bb0ac;
+  font-size: 14px;
+  border: none;
+  padding: 0;
+  margin-right: 8px;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  right: 0;
+  outline: none;
+  cursor: pointer;
+}
+/* line 92, ../components/sass/custom.scss */
+header.header-page .top-header .menu {
+  height: 215px;
+  position: inherit;
+  float: right;
+}
+/* line 97, ../components/sass/custom.scss */
+header.header-page .top-header .menu .nav {
+  line-height: 215px;
+}
+/* line 100, ../components/sass/custom.scss */
+header.header-page .top-header .menu .nav li {
+  display: inline-block;
+  position: relative;
+  height: 40px;
+}
+/* line 105, ../components/sass/custom.scss */
+header.header-page .top-header .menu .nav li a {
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 0 19px 0 19px;
+  height: 100%;
+  line-height: 40px;
+  position: relative;
+}
+/* line 117, ../components/sass/custom.scss */
+header.header-page .top-header .menu .nav li a:hover, header.header-page .top-header .menu .nav li a:active {
+  z-index: 2;
+  border-top: 1px solid #1bb0ac;
+  border-bottom: 1px solid #1bb0ac;
+}
+/* line 126, ../components/sass/custom.scss */
+header.header-page .top-header .menu .nav li a:hover::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  margin-left: -7px;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 6.5px 7px 6.5px;
+  border-color: transparent transparent #1bb0ac transparent;
+}
+/* line 141, ../components/sass/custom.scss */
+header.header-page .top-header .menu .nav li .sub-menu {
+  display: none;
+  background: rgba(16, 21, 42, 0.7);
+  width: 220px;
+  position: absolute;
+  left: 50%;
+  margin-left: -110px;
+  border-bottom: 3px solid #1bb0ac;
+}
+/* line 150, ../components/sass/custom.scss */
+header.header-page .top-header .menu .nav li .sub-menu li {
+  display: block;
+  height: auto;
+  margin-left: 21px;
+  margin-right: 21px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+/* line 157, ../components/sass/custom.scss */
+header.header-page .top-header .menu .nav li .sub-menu li:last-child {
+  border-bottom: 0;
+}
+/* line 161, ../components/sass/custom.scss */
+header.header-page .top-header .menu .nav li .sub-menu li a {
+  line-height: normal;
+  margin-left: -21px;
+  margin-right: -21px;
+  padding: 20px 25px;
+}
+/* line 167, ../components/sass/custom.scss */
+header.header-page .top-header .menu .nav li .sub-menu li a:hover, header.header-page .top-header .menu .nav li .sub-menu li a:active {
+  border: 0;
+  margin: 0 -21px 0 -21px;
+  color: #1bb0ac;
+}
+/* line 173, ../components/sass/custom.scss */
+header.header-page .top-header .menu .nav li .sub-menu li a:hover::before {
+  display: none;
+}
+/* line 182, ../components/sass/custom.scss */
+header.header-page .top-header .menu .nav li:hover > ul {
+  display: block;
+}
+/* line 189, ../components/sass/custom.scss */
+header.header-page .bottom-header {
+  font-family: "Open Sans";
+  font-weight: 300;
+}
+/* line 193, ../components/sass/custom.scss */
+header.header-page .bottom-header h1 {
+  font-size: 60px;
+  color: #fff;
+  width: 39%;
+  margin: 121px auto 0 auto;
+  text-align: center;
+}
+/* line 203, ../components/sass/custom.scss */
+header.header-page .bottom-header p {
+  font-size: 16px;
+  color: #9fa6c2;
+  width: 50%;
+  margin: 19px auto 0 auto;
+  text-align: center;
+}
+/* line 211, ../components/sass/custom.scss */
+header.header-page .bottom-header a {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+  line-height: 55px;
+  text-transform: uppercase;
+  color: #1bb0ac;
+  height: 55px;
+  width: 257px;
+  margin: 90px auto 0 auto;
+  border-radius: 0;
+  background: transparent;
+  border: 1px solid #1bb0ac;
+}
+/* line 228, ../components/sass/custom.scss */
+header.header-page .bottom-header div.line {
+  width: 1px;
+  height: 129px;
+  border-left: 1px solid #1bb0ac;
+  margin: 117px auto 0 auto;
+  position: relative;
+}
+/* line 235, ../components/sass/custom.scss */
+header.header-page .bottom-header div.line::before {
+  content: '\f111';
+  font: normal normal normal 4px/1 FontAwesome;
+  color: #1bb0ac;
+  position: absolute;
+  top: 0;
+  margin: -1px 0 0 -2px;
+}
+/* line 243, ../components/sass/custom.scss */
+header.header-page .bottom-header div.line::after {
+  content: '\f111';
+  font: normal normal normal 4px/1 FontAwesome;
+  color: #1bb0ac;
+  position: absolute;
+  bottom: 0;
+  margin: 0 0 -1px -2px;
+}
+
+/* line 257, ../components/sass/custom.scss */
+section.advantages div.container div.entry-header {
+  height: 468px;
+  font-family: "Open Sans";
+  font-weight: 300;
+  position: relative;
+}
+/* line 263, ../components/sass/custom.scss */
+section.advantages div.container div.entry-header .bglogo {
+  width: 268px;
+  height: 503px;
+  background: url("../img/bottomlogo.png") no-repeat;
+  position: absolute;
+  top: -35px;
+}
+/* line 272, ../components/sass/custom.scss */
+section.advantages div.container div.entry-header h1 {
+  font-size: 60px;
+  color: #fff;
+  width: 39%;
+  margin: 0 auto 0 auto;
+  padding-top: 20px;
+  text-align: center;
+}
+/* line 283, ../components/sass/custom.scss */
+section.advantages div.container div.entry-header p {
+  font-size: 16px;
+  line-height: 30px;
+  color: #9fa6c2;
+  width: 570px;
+  margin: 90px auto 0 auto;
+  text-align: center;
+}
+/* line 293, ../components/sass/custom.scss */
+section.advantages div.container div.our-prod {
+  position: relative;
+  font-family: "Open Sans";
+  font-weight: 300;
+  background: #fff;
+  height: 505px;
+}
+/* line 300, ../components/sass/custom.scss */
+section.advantages div.container div.our-prod h1 {
+  font-size: 60px;
+  color: #2a5285;
+  width: 40%;
+  padding: 106px 0 0 95px;
+  text-align: left;
+}
+/* line 309, ../components/sass/custom.scss */
+section.advantages div.container div.our-prod p {
+  font-size: 16px;
+  line-height: 30px;
+  color: #828799;
+  width: 40%;
+  margin: 43px 0 0 107px;
+}
+/* line 318, ../components/sass/custom.scss */
+section.advantages div.container div.our-prod div.video {
+  position: absolute;
+  right: 0;
+  top: -147px;
+  width: 728px;
+  height: 500px;
+  background: url("../img/video.png");
+}
+
+/* line 331, ../components/sass/custom.scss */
+section.supply-partners h1 {
+  font-family: "Open Sans";
+  font-size: 60px;
+  color: #2a5285;
+  font-weight: 300;
+  text-align: center;
+  padding-top: 86px;
+}
+/* line 340, ../components/sass/custom.scss */
+section.supply-partners div.commercial {
+  background: url("../img/msbg.png");
+  background-size: cover;
+  height: 630px;
+}
+/* line 345, ../components/sass/custom.scss */
+section.supply-partners div.commercial div.supply {
+  display: inline-block;
+  width: 20%;
+  margin-top: 135px;
+  position: relative;
+  left: 10%;
+  text-align: center;
+}
+/* line 353, ../components/sass/custom.scss */
+section.supply-partners div.commercial div.supply a {
+  display: block;
+  margin: 42px 0 143px 0;
+  font-size: 24px;
+  color: #295182;
+  font-weight: 400;
+  text-decoration: none;
+  line-height: 53px;
+}
+/* line 362, ../components/sass/custom.scss */
+section.supply-partners div.commercial div.supply a:hover {
+  border: 1px solid #1bb0ac;
+  margin: 41px -1px 141px -1px;
+  color: #1bb0ac;
+}
+/* line 371, ../components/sass/custom.scss */
+section.supply-partners div.our-partners {
+  height: 535px;
+  background: #fff;
+}
+/* line 375, ../components/sass/custom.scss */
+section.supply-partners div.our-partners h1 {
+  padding-top: 106px;
+  padding-bottom: 60px;
+}
+/* line 380, ../components/sass/custom.scss */
+section.supply-partners div.our-partners div.partner {
+  display: inline-block;
+  width: 23%;
+  height: 200px;
+  position: relative;
+  left: 4%;
+  text-align: center;
+  line-height: 200px;
+}
+/* line 389, ../components/sass/custom.scss */
+section.supply-partners div.our-partners div.partner img {
+  vertical-align: middle;
+}
