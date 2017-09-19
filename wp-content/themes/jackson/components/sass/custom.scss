@@ -301,7 +301,7 @@ section.advantages {
 				font-size: 60px;
 				color: #2a5285;
 				width: 40%;
-				padding: 106px 0 0 95px;
+				padding: 106px 728px 0 95px;
 				// margin: 106px 0 0 95px;
 				text-align: left;
 			}
@@ -310,8 +310,9 @@ section.advantages {
 				font-size: 16px;
 				line-height: 30px;
 				color: #828799;
-				width: 40%;
-				margin: 43px 0 0 107px;
+				// width: 40%;
+				// margin: 43px 0 0 107px;
+				padding: 43px 728px 0 107px;
 				// text-align: left;
 			}
 
@@ -391,5 +392,101 @@ section.supply-partners {
 				}
 			}
 		}
+}
+
+footer {
+
+	div.contact-us {
+		font-family: "Open Sans";
+		color:#fff;
+		margin: 0;
+		padding: 0;
+		padding-bottom: 70px;
+		background: url('../img/contactus-bg.png');
+
+		form {
+
+			h1 {
+				font-size: 60px;
+				font-weight: 300;
+				text-align: center;
+				padding-top: 90px;
+				padding-bottom: 63px;
+			}
+
+			div.form-item {
+				height: 55px;
+				position: relative;
+				margin-bottom: 15px;
+
+				h2 {
+					font-size: 24;
+					display: inline-block;
+					width: 10%;
+					text-align: right;
+					line-height: 55px;
+					position: absolute;
+					left: 50%;
+					margin-left: -326px;
+				}
+
+
+				input {
+					display: inline-block;
+					position: absolute;
+					width: 326px;
+					height: 53px;
+					left: 50%;
+					margin-left: -163px;
+					border: 1px solid #fff;
+					border-radius: 0;
+					color: #fff;
+					background: transparent;
+
+					&::-webkit-input-placeholder {
+						font-family: "Open Sans";
+						font-size: 14px;
+						font-style: italic;
+						font-variant: normal;
+						font-weight: 400;
+						color:#fff;
+						padding-left: 20px;
+					}
+				}
+
+				textarea {
+					display: inline-block;
+					position: absolute;
+					width: 326px;
+					height: 200px;
+					left: 50%;
+					margin-left: -163px;
+					border-radius: 0;	
+				}
+
+				input.submit {
+					display: block;
+					position: relative;
+					width: 164px;
+					height: 53px;
+					left: 50%;
+					margin-left: -82px;
+					margin-top: 175px;
+					border: 1px solid #0addbc;
+					font-size: 16px;	
+					color: #0addbc;
+					margin-bottom: 70px;
+				}
+			}		
+		}
+	}
+
+	div.copyright {
+		font-family: 'Open Sans';
+		font-size: 16px;
+		line-height: 44px;
+		text-align: center;
+		color: #868a9a;
+	}
 }
 

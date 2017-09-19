@@ -18,7 +18,7 @@
 	<?php if(is_page_template('home-tpl.php')) { ?>
 	<header class="header-page">
 		<div class="top-header">
-			<div class="logo"><img src="<?php echo get_template_directory_uri(); ?>/img/mainlogo.png" alt=""></div>
+			<div class="logo"><a href="/"><img src="<?php echo $jackson['logotype']['url']; ?>" alt=""></a></div>
 			<div class="search">
 				 <?php get_search_form(); ?>
 			</div>

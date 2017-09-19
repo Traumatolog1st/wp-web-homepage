@@ -74,34 +74,6 @@ if ( ! class_exists( 'Redux_Framework_config' ) ) {
                         ),
                     ),
                 );
-
-			$this->sections[] = array(
-                    'title'   => __( 'Contact', THEME_OPT ),
-                    'icon'    => 'el-icon-list',
-                    'heading' => 'Contact',
-                    'fields'  => array(
-                        array(
-                            'id'        	=> 'facebook',
-                            'type'      	=> 'text',
-                            'title'     	=> __('facebook', THEME_OPT)
-                        ),
-                        array(
-                            'id'        	=> 'intagram',
-                            'type'      	=> 'text',
-                            'title'     	=> __('instagram', THEME_OPT),
-                        ),
-                        array(
-                            'id'        	=> 'youtube',
-                            'type'      	=> 'text',
-                            'title'     	=> __('youtube', THEME_OPT),
-                        ),
-                        array(
-                            'id'        	=> 'telephone',
-                            'type'      	=> 'text',
-                            'title'     	=> __('Telephone', THEME_OPT),
-                        ),
-                    ),
-                );
 		}
 
 		/**
