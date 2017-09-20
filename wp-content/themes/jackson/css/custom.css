@@ -463,19 +463,23 @@ footer div.contact-us form div.form-item {
 }
 /* line 422, ../components/sass/custom.scss */
 footer div.contact-us form div.form-item h2 {
-  font-size: 24;
+  font-size: 24px;
   display: inline-block;
   width: 10%;
   text-align: right;
   line-height: 55px;
   position: absolute;
-  left: 50%;
-  margin-left: -326px;
+  right: 50%;
+  margin-right: 194px;
 }
-/* line 434, ../components/sass/custom.scss */
+/* line 433, ../components/sass/custom.scss */
+footer div.contact-us form div.form-item .wpcf7-not-valid-tip {
+  text-align: center;
+}
+/* line 438, ../components/sass/custom.scss */
 footer div.contact-us form div.form-item input {
   display: inline-block;
-  position: absolute;
+  position: relative;
   width: 326px;
   height: 53px;
   left: 50%;
@@ -485,7 +489,7 @@ footer div.contact-us form div.form-item input {
   color: #fff;
   background: transparent;
 }
-/* line 446, ../components/sass/custom.scss */
+/* line 450, ../components/sass/custom.scss */
 footer div.contact-us form div.form-item input::-webkit-input-placeholder {
   font-family: "Open Sans";
   font-size: 14px;
@@ -495,17 +499,17 @@ footer div.contact-us form div.form-item input::-webkit-input-placeholder {
   color: #fff;
   padding-left: 20px;
 }
-/* line 457, ../components/sass/custom.scss */
+/* line 461, ../components/sass/custom.scss */
 footer div.contact-us form div.form-item textarea {
   display: inline-block;
-  position: absolute;
+  position: relative;
   width: 326px;
   height: 200px;
   left: 50%;
   margin-left: -163px;
   border-radius: 0;
 }
-/* line 467, ../components/sass/custom.scss */
+/* line 471, ../components/sass/custom.scss */
 footer div.contact-us form div.form-item input.submit {
   display: block;
   position: relative;
@@ -519,7 +523,20 @@ footer div.contact-us form div.form-item input.submit {
   color: #0addbc;
   margin-bottom: 70px;
 }
-/* line 484, ../components/sass/custom.scss */
+/* line 485, ../components/sass/custom.scss */
+footer div.contact-us form div.form-item input[type=text].wpcf7-not-valid,
+footer div.contact-us form div.form-item input[type=email].wpcf7-not-valid,
+footer div.contact-us form div.form-item input[type=tel].wpcf7-not-valid {
+  border: 1px solid #ec3c06;
+}
+/* line 492, ../components/sass/custom.scss */
+footer div.contact-us form .wpcf7-response-output {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  border: 0;
+}
+/* line 501, ../components/sass/custom.scss */
 footer div.copyright {
   font-family: 'Open Sans';
   font-size: 16px;

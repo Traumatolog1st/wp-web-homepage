@@ -420,20 +420,24 @@ footer {
 				margin-bottom: 15px;
 
 				h2 {
-					font-size: 24;
+					font-size: 24px;
 					display: inline-block;
 					width: 10%;
 					text-align: right;
 					line-height: 55px;
 					position: absolute;
-					left: 50%;
-					margin-left: -326px;
+					right: 50%;
+					margin-right: 194px;
+				}
+
+				.wpcf7-not-valid-tip {
+					text-align: center;
 				}
 
 
 				input {
 					display: inline-block;
-					position: absolute;
+					position: relative;
 					width: 326px;
 					height: 53px;
 					left: 50%;
@@ -456,7 +460,7 @@ footer {
 
 				textarea {
 					display: inline-block;
-					position: absolute;
+					position: relative;
 					width: 326px;
 					height: 200px;
 					left: 50%;
@@ -477,7 +481,20 @@ footer {
 					color: #0addbc;
 					margin-bottom: 70px;
 				}
-			}		
+
+				input[type=text].wpcf7-not-valid,
+				input[type=email].wpcf7-not-valid,
+				input[type=tel].wpcf7-not-valid {
+					border: 1px solid #ec3c06;
+				}
+			}	
+
+			.wpcf7-response-output{
+					position: absolute;
+					width: 100%;
+					text-align: center;
+					border: 0;
+				}	
 		}
 	}
 
@@ -489,4 +506,6 @@ footer {
 		color: #868a9a;
 	}
 }
+
+
 
