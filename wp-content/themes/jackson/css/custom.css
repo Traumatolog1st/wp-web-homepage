@@ -67,7 +67,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 12, ../components/sass/custom.scss */
+/* line 13, ../components/sass/custom.scss */
 body {
   margin: 0;
   padding: 0;
@@ -75,31 +75,37 @@ body {
   background: #162241;
 }
 
-/* line 20, ../components/sass/custom.scss */
+/* line 21, ../components/sass/custom.scss */
 header.header-page {
   background: url("../img/header_bg.jpg");
   background-size: cover;
   height: 950px;
 }
-/* line 25, ../components/sass/custom.scss */
-header.header-page:after {
-  content: '';
-}
-/* line 29, ../components/sass/custom.scss */
+/* line 26, ../components/sass/custom.scss */
 header.header-page .top-header {
   height: 215px;
   position: relative;
 }
-/* line 33, ../components/sass/custom.scss */
+/* line 30, ../components/sass/custom.scss */
 header.header-page .top-header .logo, header.header-page .top-header .menu, header.header-page .top-header .search {
   display: inline-block;
 }
-/* line 37, ../components/sass/custom.scss */
+/* line 34, ../components/sass/custom.scss */
 header.header-page .top-header .logo {
   position: absolute;
   padding: 74px 0 0 96px;
 }
-/* line 42, ../components/sass/custom.scss */
+@media screen and (max-width: 767px) {
+  /* line 34, ../components/sass/custom.scss */
+  header.header-page .top-header .logo {
+    display: block;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    padding: 100px 0 0 0;
+  }
+}
+/* line 46, ../components/sass/custom.scss */
 header.header-page .top-header .search {
   height: 215px;
   font-family: Open Sans, serif;
@@ -107,7 +113,19 @@ header.header-page .top-header .search {
   float: right;
   padding: 0 88px 0 15px;
 }
-/* line 49, ../components/sass/custom.scss */
+@media screen and (max-width: 767px) {
+  /* line 46, ../components/sass/custom.scss */
+  header.header-page .top-header .search {
+    display: block;
+    position: absolute;
+    padding: 30px;
+    float: right;
+    height: auto;
+    top: 0;
+    right: 0;
+  }
+}
+/* line 63, ../components/sass/custom.scss */
 header.header-page .top-header .search form {
   position: relative;
   height: 28px;
@@ -115,7 +133,13 @@ header.header-page .top-header .search form {
   top: 50%;
   margin-top: -14px;
 }
-/* line 56, ../components/sass/custom.scss */
+@media screen and (max-width: 767px) {
+  /* line 63, ../components/sass/custom.scss */
+  header.header-page .top-header .search form {
+    margin: 0;
+  }
+}
+/* line 75, ../components/sass/custom.scss */
 header.header-page .top-header .search form .searchinput {
   border: 0;
   font-size: 14px;
@@ -125,7 +149,7 @@ header.header-page .top-header .search form .searchinput {
   background: url("../img/search.png") no-repeat;
   padding: 0 0 0 23px;
 }
-/* line 64, ../components/sass/custom.scss */
+/* line 83, ../components/sass/custom.scss */
 header.header-page .top-header .search form .searchinput::-webkit-input-placeholder {
   font-family: "Open Sans";
   font-size: 14px;
@@ -134,7 +158,7 @@ header.header-page .top-header .search form .searchinput::-webkit-input-placehol
   font-weight: 400;
   color: #dedada;
 }
-/* line 74, ../components/sass/custom.scss */
+/* line 93, ../components/sass/custom.scss */
 header.header-page .top-header .search form button {
   width: 29px;
   height: 28px;
@@ -150,23 +174,48 @@ header.header-page .top-header .search form button {
   outline: none;
   cursor: pointer;
 }
-/* line 92, ../components/sass/custom.scss */
+/* line 111, ../components/sass/custom.scss */
 header.header-page .top-header .menu {
   height: 215px;
   position: inherit;
   float: right;
 }
-/* line 97, ../components/sass/custom.scss */
+@media screen and (max-width: 767px) {
+  /* line 111, ../components/sass/custom.scss */
+  header.header-page .top-header .menu {
+    float: none;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    left: 0;
+    top: 0;
+    background: #162241;
+  }
+}
+/* line 127, ../components/sass/custom.scss */
 header.header-page .top-header .menu .nav {
   line-height: 215px;
 }
-/* line 100, ../components/sass/custom.scss */
+@media screen and (max-width: 767px) {
+  /* line 127, ../components/sass/custom.scss */
+  header.header-page .top-header .menu .nav {
+    line-height: 100%;
+    display: none;
+  }
+}
+/* line 135, ../components/sass/custom.scss */
 header.header-page .top-header .menu .nav li {
   display: inline-block;
   position: relative;
   height: 40px;
 }
-/* line 105, ../components/sass/custom.scss */
+@media screen and (max-width: 767px) {
+  /* line 135, ../components/sass/custom.scss */
+  header.header-page .top-header .menu .nav li {
+    display: block;
+  }
+}
+/* line 144, ../components/sass/custom.scss */
 header.header-page .top-header .menu .nav li a {
   font-family: 'Open Sans';
   font-weight: 400;
@@ -179,13 +228,19 @@ header.header-page .top-header .menu .nav li a {
   line-height: 40px;
   position: relative;
 }
-/* line 117, ../components/sass/custom.scss */
+@media screen and (max-width: 767px) {
+  /* line 144, ../components/sass/custom.scss */
+  header.header-page .top-header .menu .nav li a {
+    padding: 0 10%;
+  }
+}
+/* line 160, ../components/sass/custom.scss */
 header.header-page .top-header .menu .nav li a:hover, header.header-page .top-header .menu .nav li a:active {
   z-index: 2;
   border-top: 1px solid #1bb0ac;
   border-bottom: 1px solid #1bb0ac;
 }
-/* line 126, ../components/sass/custom.scss */
+/* line 169, ../components/sass/custom.scss */
 header.header-page .top-header .menu .nav li a:hover::before {
   content: '';
   position: absolute;
@@ -199,7 +254,7 @@ header.header-page .top-header .menu .nav li a:hover::before {
   border-width: 0 6.5px 7px 6.5px;
   border-color: transparent transparent #1bb0ac transparent;
 }
-/* line 141, ../components/sass/custom.scss */
+/* line 184, ../components/sass/custom.scss */
 header.header-page .top-header .menu .nav li .sub-menu {
   display: none;
   background: rgba(16, 21, 42, 0.7);
@@ -209,7 +264,7 @@ header.header-page .top-header .menu .nav li .sub-menu {
   margin-left: -110px;
   border-bottom: 3px solid #1bb0ac;
 }
-/* line 150, ../components/sass/custom.scss */
+/* line 193, ../components/sass/custom.scss */
 header.header-page .top-header .menu .nav li .sub-menu li {
   display: block;
   height: auto;
@@ -217,37 +272,37 @@ header.header-page .top-header .menu .nav li .sub-menu li {
   margin-right: 21px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
-/* line 157, ../components/sass/custom.scss */
+/* line 200, ../components/sass/custom.scss */
 header.header-page .top-header .menu .nav li .sub-menu li:last-child {
   border-bottom: 0;
 }
-/* line 161, ../components/sass/custom.scss */
+/* line 204, ../components/sass/custom.scss */
 header.header-page .top-header .menu .nav li .sub-menu li a {
   line-height: normal;
   margin-left: -21px;
   margin-right: -21px;
   padding: 20px 25px;
 }
-/* line 167, ../components/sass/custom.scss */
+/* line 210, ../components/sass/custom.scss */
 header.header-page .top-header .menu .nav li .sub-menu li a:hover, header.header-page .top-header .menu .nav li .sub-menu li a:active {
   border: 0;
   margin: 0 -21px 0 -21px;
   color: #1bb0ac;
 }
-/* line 173, ../components/sass/custom.scss */
+/* line 216, ../components/sass/custom.scss */
 header.header-page .top-header .menu .nav li .sub-menu li a:hover::before {
   display: none;
 }
-/* line 182, ../components/sass/custom.scss */
+/* line 225, ../components/sass/custom.scss */
 header.header-page .top-header .menu .nav li:hover > ul {
   display: block;
 }
-/* line 189, ../components/sass/custom.scss */
+/* line 232, ../components/sass/custom.scss */
 header.header-page .bottom-header {
   font-family: "Open Sans";
   font-weight: 300;
 }
-/* line 193, ../components/sass/custom.scss */
+/* line 236, ../components/sass/custom.scss */
 header.header-page .bottom-header h1 {
   font-size: 60px;
   color: #fff;
@@ -255,7 +310,14 @@ header.header-page .bottom-header h1 {
   margin: 121px auto 0 auto;
   text-align: center;
 }
-/* line 203, ../components/sass/custom.scss */
+@media screen and (max-width: 767px) {
+  /* line 236, ../components/sass/custom.scss */
+  header.header-page .bottom-header h1 {
+    font-size: 20px;
+    width: 100%;
+  }
+}
+/* line 250, ../components/sass/custom.scss */
 header.header-page .bottom-header p {
   font-size: 16px;
   color: #9fa6c2;
@@ -263,7 +325,15 @@ header.header-page .bottom-header p {
   margin: 19px auto 0 auto;
   text-align: center;
 }
-/* line 211, ../components/sass/custom.scss */
+@media screen and (max-width: 767px) {
+  /* line 250, ../components/sass/custom.scss */
+  header.header-page .bottom-header p {
+    font-size: 15px;
+    width: 100%;
+    padding: 0 auto;
+  }
+}
+/* line 263, ../components/sass/custom.scss */
 header.header-page .bottom-header a {
   display: block;
   font-size: 14px;
@@ -280,7 +350,7 @@ header.header-page .bottom-header a {
   background: transparent;
   border: 1px solid #1bb0ac;
 }
-/* line 228, ../components/sass/custom.scss */
+/* line 280, ../components/sass/custom.scss */
 header.header-page .bottom-header div.line {
   width: 1px;
   height: 129px;
@@ -288,7 +358,7 @@ header.header-page .bottom-header div.line {
   margin: 117px auto 0 auto;
   position: relative;
 }
-/* line 235, ../components/sass/custom.scss */
+/* line 287, ../components/sass/custom.scss */
 header.header-page .bottom-header div.line::before {
   content: '\f111';
   font: normal normal normal 4px/1 FontAwesome;
@@ -297,7 +367,7 @@ header.header-page .bottom-header div.line::before {
   top: 0;
   margin: -1px 0 0 -2px;
 }
-/* line 243, ../components/sass/custom.scss */
+/* line 295, ../components/sass/custom.scss */
 header.header-page .bottom-header div.line::after {
   content: '\f111';
   font: normal normal normal 4px/1 FontAwesome;
@@ -307,14 +377,14 @@ header.header-page .bottom-header div.line::after {
   margin: 0 0 -1px -2px;
 }
 
-/* line 257, ../components/sass/custom.scss */
+/* line 309, ../components/sass/custom.scss */
 section.advantages div.container div.entry-header {
   height: 468px;
   font-family: "Open Sans";
   font-weight: 300;
   position: relative;
 }
-/* line 263, ../components/sass/custom.scss */
+/* line 317, ../components/sass/custom.scss */
 section.advantages div.container div.entry-header .bglogo {
   width: 268px;
   height: 503px;
@@ -322,7 +392,7 @@ section.advantages div.container div.entry-header .bglogo {
   position: absolute;
   top: -35px;
 }
-/* line 272, ../components/sass/custom.scss */
+/* line 326, ../components/sass/custom.scss */
 section.advantages div.container div.entry-header h1 {
   font-size: 60px;
   color: #fff;
@@ -331,7 +401,15 @@ section.advantages div.container div.entry-header h1 {
   padding-top: 20px;
   text-align: center;
 }
-/* line 283, ../components/sass/custom.scss */
+@media screen and (max-width: 767px) {
+  /* line 326, ../components/sass/custom.scss */
+  section.advantages div.container div.entry-header h1 {
+    font-size: 30px;
+    width: 100%;
+    padding: 0;
+  }
+}
+/* line 342, ../components/sass/custom.scss */
 section.advantages div.container div.entry-header p {
   font-size: 16px;
   line-height: 30px;
@@ -340,7 +418,14 @@ section.advantages div.container div.entry-header p {
   margin: 90px auto 0 auto;
   text-align: center;
 }
-/* line 293, ../components/sass/custom.scss */
+@media screen and (max-width: 767px) {
+  /* line 342, ../components/sass/custom.scss */
+  section.advantages div.container div.entry-header p {
+    width: 100%;
+    padding: 0;
+  }
+}
+/* line 356, ../components/sass/custom.scss */
 section.advantages div.container div.our-prod {
   position: relative;
   font-family: "Open Sans";
@@ -348,7 +433,7 @@ section.advantages div.container div.our-prod {
   background: #fff;
   height: 505px;
 }
-/* line 300, ../components/sass/custom.scss */
+/* line 363, ../components/sass/custom.scss */
 section.advantages div.container div.our-prod h1 {
   font-size: 60px;
   color: #2a5285;
@@ -356,14 +441,29 @@ section.advantages div.container div.our-prod h1 {
   padding: 106px 728px 0 95px;
   text-align: left;
 }
-/* line 309, ../components/sass/custom.scss */
+@media screen and (max-width: 767px) {
+  /* line 363, ../components/sass/custom.scss */
+  section.advantages div.container div.our-prod h1 {
+    font-size: 30px;
+    width: 90%;
+    padding: 5%;
+  }
+}
+/* line 377, ../components/sass/custom.scss */
 section.advantages div.container div.our-prod p {
   font-size: 16px;
   line-height: 30px;
   color: #828799;
   padding: 43px 728px 0 107px;
 }
-/* line 319, ../components/sass/custom.scss */
+@media screen and (max-width: 767px) {
+  /* line 377, ../components/sass/custom.scss */
+  section.advantages div.container div.our-prod p {
+    width: 90%;
+    padding: 5%;
+  }
+}
+/* line 391, ../components/sass/custom.scss */
 section.advantages div.container div.our-prod div.video {
   position: absolute;
   right: 0;
@@ -371,9 +471,10 @@ section.advantages div.container div.our-prod div.video {
   width: 728px;
   height: 500px;
   background: url("../img/video.png");
+  display: none;
 }
 
-/* line 332, ../components/sass/custom.scss */
+/* line 405, ../components/sass/custom.scss */
 section.supply-partners h1 {
   font-family: "Open Sans";
   font-size: 60px;
@@ -382,13 +483,28 @@ section.supply-partners h1 {
   text-align: center;
   padding-top: 86px;
 }
-/* line 341, ../components/sass/custom.scss */
+@media screen and (max-width: 767px) {
+  /* line 405, ../components/sass/custom.scss */
+  section.supply-partners h1 {
+    font-size: 30px;
+    width: 100%;
+    padding: 5%;
+    padding-bottom: 100px;
+  }
+}
+/* line 420, ../components/sass/custom.scss */
 section.supply-partners div.commercial {
   background: url("../img/msbg.png");
   background-size: cover;
   height: 630px;
 }
-/* line 346, ../components/sass/custom.scss */
+@media screen and (max-width: 767px) {
+  /* line 420, ../components/sass/custom.scss */
+  section.supply-partners div.commercial {
+    height: auto;
+  }
+}
+/* line 428, ../components/sass/custom.scss */
 section.supply-partners div.commercial div.supply {
   display: inline-block;
   width: 20%;
@@ -397,7 +513,16 @@ section.supply-partners div.commercial div.supply {
   left: 10%;
   text-align: center;
 }
-/* line 354, ../components/sass/custom.scss */
+@media screen and (max-width: 767px) {
+  /* line 428, ../components/sass/custom.scss */
+  section.supply-partners div.commercial div.supply {
+    display: block;
+    width: 100%;
+    left: 0;
+    margin: 0;
+  }
+}
+/* line 442, ../components/sass/custom.scss */
 section.supply-partners div.commercial div.supply a {
   display: block;
   margin: 42px 0 143px 0;
@@ -407,23 +532,47 @@ section.supply-partners div.commercial div.supply a {
   text-decoration: none;
   line-height: 53px;
 }
-/* line 363, ../components/sass/custom.scss */
+@media screen and (max-width: 767px) {
+  /* line 442, ../components/sass/custom.scss */
+  section.supply-partners div.commercial div.supply a {
+    margin: 0;
+  }
+}
+/* line 455, ../components/sass/custom.scss */
 section.supply-partners div.commercial div.supply a:hover {
   border: 1px solid #1bb0ac;
   margin: 41px -1px 141px -1px;
   color: #1bb0ac;
 }
-/* line 372, ../components/sass/custom.scss */
+@media screen and (max-width: 767px) {
+  /* line 455, ../components/sass/custom.scss */
+  section.supply-partners div.commercial div.supply a:hover {
+    margin: 0;
+  }
+}
+/* line 468, ../components/sass/custom.scss */
 section.supply-partners div.our-partners {
   height: 535px;
   background: #fff;
 }
-/* line 376, ../components/sass/custom.scss */
+@media screen and (max-width: 767px) {
+  /* line 468, ../components/sass/custom.scss */
+  section.supply-partners div.our-partners {
+    height: auto;
+  }
+}
+/* line 476, ../components/sass/custom.scss */
 section.supply-partners div.our-partners h1 {
   padding-top: 106px;
   padding-bottom: 60px;
 }
-/* line 381, ../components/sass/custom.scss */
+@media screen and (max-width: 767px) {
+  /* line 476, ../components/sass/custom.scss */
+  section.supply-partners div.our-partners h1 {
+    padding: 70px 0 30px 0;
+  }
+}
+/* line 485, ../components/sass/custom.scss */
 section.supply-partners div.our-partners div.partner {
   display: inline-block;
   width: 23%;
@@ -433,12 +582,19 @@ section.supply-partners div.our-partners div.partner {
   text-align: center;
   line-height: 200px;
 }
-/* line 390, ../components/sass/custom.scss */
+@media screen and (max-width: 767px) {
+  /* line 485, ../components/sass/custom.scss */
+  section.supply-partners div.our-partners div.partner {
+    width: 23%;
+    left: 0;
+  }
+}
+/* line 500, ../components/sass/custom.scss */
 section.supply-partners div.our-partners div.partner img {
   vertical-align: middle;
 }
 
-/* line 399, ../components/sass/custom.scss */
+/* line 509, ../components/sass/custom.scss */
 footer div.contact-us {
   font-family: "Open Sans";
   color: #fff;
@@ -447,7 +603,7 @@ footer div.contact-us {
   padding-bottom: 70px;
   background: url("../img/contactus-bg.png");
 }
-/* line 409, ../components/sass/custom.scss */
+/* line 519, ../components/sass/custom.scss */
 footer div.contact-us form h1 {
   font-size: 60px;
   font-weight: 300;
@@ -455,13 +611,28 @@ footer div.contact-us form h1 {
   padding-top: 90px;
   padding-bottom: 63px;
 }
-/* line 417, ../components/sass/custom.scss */
+@media screen and (max-width: 767px) {
+  /* line 519, ../components/sass/custom.scss */
+  footer div.contact-us form h1 {
+    font-size: 30px;
+    width: 100%;
+    margin: 0;
+    padding: 50px 0 20px 0;
+  }
+}
+/* line 534, ../components/sass/custom.scss */
 footer div.contact-us form div.form-item {
   height: 55px;
   position: relative;
   margin-bottom: 15px;
 }
-/* line 422, ../components/sass/custom.scss */
+@media screen and (max-width: 767px) {
+  /* line 534, ../components/sass/custom.scss */
+  footer div.contact-us form div.form-item {
+    height: auto;
+  }
+}
+/* line 543, ../components/sass/custom.scss */
 footer div.contact-us form div.form-item h2 {
   font-size: 24px;
   display: inline-block;
@@ -472,11 +643,24 @@ footer div.contact-us form div.form-item h2 {
   right: 50%;
   margin-right: 194px;
 }
-/* line 433, ../components/sass/custom.scss */
+@media screen and (max-width: 767px) {
+  /* line 543, ../components/sass/custom.scss */
+  footer div.contact-us form div.form-item h2 {
+    display: block;
+    margin: 0;
+    font-size: 14px;
+    line-height: 100%;
+    text-align: left;
+    width: 90%;
+    left: 10%;
+    position: relative;
+  }
+}
+/* line 566, ../components/sass/custom.scss */
 footer div.contact-us form div.form-item .wpcf7-not-valid-tip {
   text-align: center;
 }
-/* line 438, ../components/sass/custom.scss */
+/* line 571, ../components/sass/custom.scss */
 footer div.contact-us form div.form-item input {
   display: inline-block;
   position: relative;
@@ -489,7 +673,17 @@ footer div.contact-us form div.form-item input {
   color: #fff;
   background: transparent;
 }
-/* line 450, ../components/sass/custom.scss */
+@media screen and (max-width: 767px) {
+  /* line 571, ../components/sass/custom.scss */
+  footer div.contact-us form div.form-item input {
+    width: 98%;
+    display: block;
+    margin: 1%;
+    padding: 0;
+    left: 0;
+  }
+}
+/* line 591, ../components/sass/custom.scss */
 footer div.contact-us form div.form-item input::-webkit-input-placeholder {
   font-family: "Open Sans";
   font-size: 14px;
@@ -499,7 +693,7 @@ footer div.contact-us form div.form-item input::-webkit-input-placeholder {
   color: #fff;
   padding-left: 20px;
 }
-/* line 461, ../components/sass/custom.scss */
+/* line 602, ../components/sass/custom.scss */
 footer div.contact-us form div.form-item textarea {
   display: inline-block;
   position: relative;
@@ -509,7 +703,17 @@ footer div.contact-us form div.form-item textarea {
   margin-left: -163px;
   border-radius: 0;
 }
-/* line 471, ../components/sass/custom.scss */
+@media screen and (max-width: 767px) {
+  /* line 602, ../components/sass/custom.scss */
+  footer div.contact-us form div.form-item textarea {
+    width: 98%;
+    display: block;
+    margin: 1%;
+    padding: 0;
+    left: 0;
+  }
+}
+/* line 621, ../components/sass/custom.scss */
 footer div.contact-us form div.form-item input.submit {
   display: block;
   position: relative;
@@ -523,24 +727,37 @@ footer div.contact-us form div.form-item input.submit {
   color: #0addbc;
   margin-bottom: 70px;
 }
-/* line 485, ../components/sass/custom.scss */
+@media screen and (max-width: 767px) {
+  /* line 621, ../components/sass/custom.scss */
+  footer div.contact-us form div.form-item input.submit {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+}
+/* line 640, ../components/sass/custom.scss */
 footer div.contact-us form div.form-item input[type=text].wpcf7-not-valid,
 footer div.contact-us form div.form-item input[type=email].wpcf7-not-valid,
 footer div.contact-us form div.form-item input[type=tel].wpcf7-not-valid {
   border: 1px solid #ec3c06;
 }
-/* line 492, ../components/sass/custom.scss */
+/* line 647, ../components/sass/custom.scss */
 footer div.contact-us form .wpcf7-response-output {
   position: absolute;
   width: 100%;
   text-align: center;
   border: 0;
 }
-/* line 501, ../components/sass/custom.scss */
+/* line 656, ../components/sass/custom.scss */
 footer div.copyright {
   font-family: 'Open Sans';
   font-size: 16px;
   line-height: 44px;
   text-align: center;
   color: #868a9a;
+}
+@media screen and (max-width: 767px) {
+  /* line 656, ../components/sass/custom.scss */
+  footer div.copyright {
+    font-size: 10px;
+  }
 }

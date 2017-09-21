@@ -4,6 +4,7 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
+@import "mixins";
 
 html{
 	// background: rgb(22,34,65);
@@ -22,10 +23,6 @@ header.header-page {
 	background-size: cover;
 	height: 950px;
 
-	&:after {
-		content: '';
-	}
-
 	.top-header {
 		height: 215px;
 		position: relative;
@@ -37,6 +34,13 @@ header.header-page {
 		.logo {
 			position: absolute;
 			padding: 74px 0 0 96px;
+			@include mediaMax(767) {
+				display: block;
+				position: relative;
+				width: 100%;
+				text-align: center;
+				padding:100px 0 0 0;
+			}
 		}
 
 		.search {
@@ -46,12 +50,27 @@ header.header-page {
 			float: right;
 			padding: 0 88px 0 15px;
 
+			@include mediaMax(767) {
+				display: block;
+				position: absolute;
+				padding: 30px;
+				float: right;
+				height: auto;
+				top: 0;
+				right: 0;
+			}
+
 			form { 
 				position:relative;
 				height: 28px;
 				width: 193px;
 				top: 50%;
 				margin-top: -14px;
+
+				@include mediaMax(767) {
+					margin: 0;
+
+				}
 
 				.searchinput {
 				border: 0;
@@ -94,13 +113,33 @@ header.header-page {
 			position: inherit;
 			float: right;
 
+			@include mediaMax(767) {
+				float: none;
+				position: absolute;
+				width: 100%;
+				height: auto;
+				left: 0;
+				top: 0;
+				background: rgb(22,34,65);
+				// display: none;
+			}
+
 			.nav {
 					line-height: 215px;
+
+					@include mediaMax(767) {
+						line-height: 100%;
+						display: none;
+					}
 					
 				li {
 					display: inline-block;
 					position: relative;
 					height: 40px;
+
+					@include mediaMax(767) {
+						display:block;
+					}
 
 					a {
 						font-family: 'Open Sans';
@@ -113,6 +152,10 @@ header.header-page {
 						height:100%;
 						line-height: 40px;
 						position: relative;
+
+						@include mediaMax(767) {
+							padding: 0 10%;
+						}
 
 						&:hover, &:active{
 							// margin: -1px 0 -1px 0;
@@ -198,6 +241,10 @@ header.header-page {
 			// margin-right: auto;
 			margin: 121px auto 0 auto;
 			text-align: center;
+			@include mediaMax(767) {
+				font-size: 20px;
+				width: 100%;
+			}
 		}
 
 		p {
@@ -206,6 +253,11 @@ header.header-page {
 			width: 50%;
 			margin: 19px auto 0 auto;
 			text-align: center;
+			@include mediaMax(767) {
+				font-size: 15px;
+				width: 100%;
+				padding: 0 auto;
+			}
 		}
 
 		a {
@@ -260,6 +312,8 @@ section.advantages {
 			font-weight: 300;
 			position: relative;
 			// background: url('../img/bottomlogo.png') no-repeat;
+
+
 			.bglogo {
 				width: 268px;
 				height: 503px;
@@ -278,6 +332,11 @@ section.advantages {
 				margin: 0 auto 0 auto;
 				padding-top: 20px;
 				text-align: center;
+				@include mediaMax(767) {
+					font-size: 30px;
+					width: 100%;
+					padding: 0;
+				}
 			}
 
 			p {
@@ -287,6 +346,10 @@ section.advantages {
 				width: 570px;
 				margin: 90px auto 0 auto;
 				text-align: center;
+				@include mediaMax(767) {
+					width: 100%;
+					padding: 0;
+				}
 			}
 		}
 
@@ -304,6 +367,11 @@ section.advantages {
 				padding: 106px 728px 0 95px;
 				// margin: 106px 0 0 95px;
 				text-align: left;
+				@include mediaMax(767) {
+					font-size: 30px;
+					width: 90%;
+					padding: 5%;
+				}
 			}
 
 			p {
@@ -314,6 +382,10 @@ section.advantages {
 				// margin: 43px 0 0 107px;
 				padding: 43px 728px 0 107px;
 				// text-align: left;
+				@include mediaMax(767) {
+					width: 90%;
+					padding: 5%;
+				}
 			}
 
 			div.video {
@@ -323,12 +395,13 @@ section.advantages {
 				width: 728px;
 				height: 500px;
 				background: url('../img/video.png');
+				display:none;
 			}
 		}
 	}
 }
 
-section.supply-partners {
+section.supply-partners {					
 	h1 {
 		font-family: "Open Sans";
 		font-size: 60px;
@@ -336,12 +409,21 @@ section.supply-partners {
 		font-weight: 300;
 		text-align: center;
 		padding-top: 86px;
+		@include mediaMax(767) {
+					font-size: 30px;
+					width: 100%;
+					padding: 5%;
+					padding-bottom: 100px;
+				}
 	}
 
 	div.commercial {
 		background: url('../img/msbg.png');
 		background-size: cover;
 		height: 630px;
+		@include mediaMax(767) {
+			height: auto;
+		}
 
 		div.supply {
 			display: inline-block;
@@ -350,6 +432,12 @@ section.supply-partners {
 			position: relative;
 			left: 10%;
 			text-align: center;
+			@include mediaMax(767) {
+				display: block;
+				width: 100%;
+				left: 0;
+				margin: 0;
+			}
 
 			a {
 				display: block;
@@ -360,10 +448,18 @@ section.supply-partners {
 				text-decoration: none;
 				line-height: 53px;
 
+				@include mediaMax(767) {
+					margin: 0;
+				}
+
 				&:hover {
 					border: 1px solid #1bb0ac;
 					margin: 41px -1px 141px -1px;
 					color: #1bb0ac;
+
+					@include mediaMax(767) {
+						margin: 0;
+					}
 				}
 			}
 		}
@@ -373,9 +469,17 @@ section.supply-partners {
 			height: 535px;
 			background: #fff;
 
+			@include mediaMax(767) {
+				height: auto;
+			}
+
 			h1 {
 				padding-top: 106px;
 				padding-bottom: 60px;
+
+				@include mediaMax(767) {
+					padding: 70px 0 30px 0;
+				}
 			}
 
 			div.partner {
@@ -386,6 +490,12 @@ section.supply-partners {
 				left: 4%;
 				text-align: center;
 				line-height: 200px;
+
+				@include mediaMax(767) {
+					width: 23%;
+					left:0;
+				}
+
 
 				img {
 					vertical-align: middle;
@@ -412,12 +522,23 @@ footer {
 				text-align: center;
 				padding-top: 90px;
 				padding-bottom: 63px;
+
+				@include mediaMax(767) {
+					font-size: 30px;
+					width: 100%;
+					margin: 0;
+					padding: 50px 0 20px 0;
+				}
 			}
 
 			div.form-item {
 				height: 55px;
 				position: relative;
 				margin-bottom: 15px;
+
+				@include mediaMax(767) {
+					height: auto;
+				}
 
 				h2 {
 					font-size: 24px;
@@ -428,6 +549,18 @@ footer {
 					position: absolute;
 					right: 50%;
 					margin-right: 194px;
+
+					@include mediaMax(767) {
+						display: block;
+						margin:0;
+						font-size: 14px;
+						line-height: 100%;
+						text-align: left;
+						width: 90%;
+						left: 10%;
+						position: relative;
+
+					}
 				}
 
 				.wpcf7-not-valid-tip {
@@ -446,6 +579,14 @@ footer {
 					border-radius: 0;
 					color: #fff;
 					background: transparent;
+
+					@include mediaMax(767) {
+						width: 98%;
+						display: block;
+						margin: 1%;
+						padding: 0;
+						left: 0;
+					}
 
 					&::-webkit-input-placeholder {
 						font-family: "Open Sans";
@@ -466,6 +607,15 @@ footer {
 					left: 50%;
 					margin-left: -163px;
 					border-radius: 0;	
+
+					@include mediaMax(767) {
+						width: 98%;
+						display: block;
+						margin: 1%;
+						padding: 0;
+						left: 0;
+					}
+
 				}
 
 				input.submit {
@@ -480,6 +630,11 @@ footer {
 					font-size: 16px;	
 					color: #0addbc;
 					margin-bottom: 70px;
+
+					@include mediaMax(767) {
+						margin-top: 25px;
+						margin-bottom: 25px;
+					}
 				}
 
 				input[type=text].wpcf7-not-valid,
@@ -504,6 +659,10 @@ footer {
 		line-height: 44px;
 		text-align: center;
 		color: #868a9a;
+
+		@include mediaMax(767) {
+			font-size: 10px;
+		}
 	}
 }
 
