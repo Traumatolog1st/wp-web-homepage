@@ -29,7 +29,13 @@
 		<div class="our-prod">
 			<h1><?php echo $page_meta['our_prod']; ?></h1>
 			<p><?php echo $page_meta['our_desc']; ?></p>
-			<div class="video"></div>
+			<div class="video">
+				<?php 
+				// var_dump($page_meta['adv_video']['url']);
+				$url = $page_meta['adv_video']['url'];
+				$poster = $page_meta['adv_thumb']['url'];
+				echo do_shortcode('[evp_embed_video url=' . $url . ' width="728" ratio="0.687" poster=' . $poster . ']'); ?>
+			</div>
 		</div>
 	</div>
 </section>

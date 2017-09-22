@@ -71,6 +71,7 @@ if ( !function_exists( "redux_add_metaboxes" ) ):
 			array(
 				'id'     => 'adv_video',
 				'type'   => 'media',
+				'mode'   => 'false',
 				'title'  => __( 'Video','jackson'),
 			),
 		)
