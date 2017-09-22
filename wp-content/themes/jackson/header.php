@@ -23,6 +23,7 @@
 				 <?php get_search_form(); ?>
 			</div>
 			<div class="menu">
+				<div class="burger"><i class="fa fa-bars" aria-hidden="true"></i></div>
 				<?php wp_nav_menu( array(
 					'theme_location' => 'menu-1',
 					'menu_id'        => 'primary-menu',

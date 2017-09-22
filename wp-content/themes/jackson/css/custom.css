@@ -105,7 +105,11 @@ header.header-page .top-header .logo {
     padding: 100px 0 0 0;
   }
 }
-/* line 46, ../components/sass/custom.scss */
+/* line 45, ../components/sass/custom.scss */
+header.header-page .top-header .logo a {
+  outline: none;
+}
+/* line 50, ../components/sass/custom.scss */
 header.header-page .top-header .search {
   height: 215px;
   font-family: Open Sans, serif;
@@ -114,7 +118,7 @@ header.header-page .top-header .search {
   padding: 0 88px 0 15px;
 }
 @media screen and (max-width: 767px) {
-  /* line 46, ../components/sass/custom.scss */
+  /* line 50, ../components/sass/custom.scss */
   header.header-page .top-header .search {
     display: block;
     position: absolute;
@@ -125,7 +129,7 @@ header.header-page .top-header .search {
     right: 0;
   }
 }
-/* line 63, ../components/sass/custom.scss */
+/* line 67, ../components/sass/custom.scss */
 header.header-page .top-header .search form {
   position: relative;
   height: 28px;
@@ -134,12 +138,12 @@ header.header-page .top-header .search form {
   margin-top: -14px;
 }
 @media screen and (max-width: 767px) {
-  /* line 63, ../components/sass/custom.scss */
+  /* line 67, ../components/sass/custom.scss */
   header.header-page .top-header .search form {
     margin: 0;
   }
 }
-/* line 75, ../components/sass/custom.scss */
+/* line 79, ../components/sass/custom.scss */
 header.header-page .top-header .search form .searchinput {
   border: 0;
   font-size: 14px;
@@ -149,7 +153,7 @@ header.header-page .top-header .search form .searchinput {
   background: url("../img/search.png") no-repeat;
   padding: 0 0 0 23px;
 }
-/* line 83, ../components/sass/custom.scss */
+/* line 87, ../components/sass/custom.scss */
 header.header-page .top-header .search form .searchinput::-webkit-input-placeholder {
   font-family: "Open Sans";
   font-size: 14px;
@@ -158,7 +162,7 @@ header.header-page .top-header .search form .searchinput::-webkit-input-placehol
   font-weight: 400;
   color: #dedada;
 }
-/* line 93, ../components/sass/custom.scss */
+/* line 97, ../components/sass/custom.scss */
 header.header-page .top-header .search form button {
   width: 29px;
   height: 28px;
@@ -174,14 +178,14 @@ header.header-page .top-header .search form button {
   outline: none;
   cursor: pointer;
 }
-/* line 111, ../components/sass/custom.scss */
+/* line 115, ../components/sass/custom.scss */
 header.header-page .top-header .menu {
   height: 215px;
   position: inherit;
   float: right;
 }
-@media screen and (max-width: 767px) {
-  /* line 111, ../components/sass/custom.scss */
+@media screen and (max-width: 1024px) {
+  /* line 115, ../components/sass/custom.scss */
   header.header-page .top-header .menu {
     float: none;
     position: absolute;
@@ -190,32 +194,51 @@ header.header-page .top-header .menu {
     left: 0;
     top: 0;
     background: #162241;
+    opacity: .9;
   }
 }
-/* line 127, ../components/sass/custom.scss */
+/* line 132, ../components/sass/custom.scss */
+header.header-page .top-header .menu div.burger {
+  display: none;
+  font-size: 40px;
+  color: #fff;
+  text-decoration: none;
+  position: absolute;
+  padding: 24px;
+  z-index: 20;
+}
+@media screen and (max-width: 1024px) {
+  /* line 132, ../components/sass/custom.scss */
+  header.header-page .top-header .menu div.burger {
+    display: block;
+    opacity: 1;
+  }
+}
+/* line 149, ../components/sass/custom.scss */
 header.header-page .top-header .menu .nav {
   line-height: 215px;
 }
-@media screen and (max-width: 767px) {
-  /* line 127, ../components/sass/custom.scss */
+@media screen and (max-width: 1024px) {
+  /* line 149, ../components/sass/custom.scss */
   header.header-page .top-header .menu .nav {
     line-height: 100%;
     display: none;
   }
 }
-/* line 135, ../components/sass/custom.scss */
+/* line 158, ../components/sass/custom.scss */
 header.header-page .top-header .menu .nav li {
   display: inline-block;
   position: relative;
   height: 40px;
 }
-@media screen and (max-width: 767px) {
-  /* line 135, ../components/sass/custom.scss */
+@media screen and (max-width: 1024px) {
+  /* line 158, ../components/sass/custom.scss */
   header.header-page .top-header .menu .nav li {
     display: block;
+    height: auto;
   }
 }
-/* line 144, ../components/sass/custom.scss */
+/* line 168, ../components/sass/custom.scss */
 header.header-page .top-header .menu .nav li a {
   font-family: 'Open Sans';
   font-weight: 400;
@@ -228,19 +251,19 @@ header.header-page .top-header .menu .nav li a {
   line-height: 40px;
   position: relative;
 }
-@media screen and (max-width: 767px) {
-  /* line 144, ../components/sass/custom.scss */
+@media screen and (max-width: 1024px) {
+  /* line 168, ../components/sass/custom.scss */
   header.header-page .top-header .menu .nav li a {
-    padding: 0 10%;
+    padding: 0 0 0 100px;
   }
 }
-/* line 160, ../components/sass/custom.scss */
+/* line 184, ../components/sass/custom.scss */
 header.header-page .top-header .menu .nav li a:hover, header.header-page .top-header .menu .nav li a:active {
   z-index: 2;
   border-top: 1px solid #1bb0ac;
   border-bottom: 1px solid #1bb0ac;
 }
-/* line 169, ../components/sass/custom.scss */
+/* line 193, ../components/sass/custom.scss */
 header.header-page .top-header .menu .nav li a:hover::before {
   content: '';
   position: absolute;
@@ -254,7 +277,7 @@ header.header-page .top-header .menu .nav li a:hover::before {
   border-width: 0 6.5px 7px 6.5px;
   border-color: transparent transparent #1bb0ac transparent;
 }
-/* line 184, ../components/sass/custom.scss */
+/* line 208, ../components/sass/custom.scss */
 header.header-page .top-header .menu .nav li .sub-menu {
   display: none;
   background: rgba(16, 21, 42, 0.7);
@@ -264,7 +287,20 @@ header.header-page .top-header .menu .nav li .sub-menu {
   margin-left: -110px;
   border-bottom: 3px solid #1bb0ac;
 }
-/* line 193, ../components/sass/custom.scss */
+@media screen and (max-width: 1024px) {
+  /* line 208, ../components/sass/custom.scss */
+  header.header-page .top-header .menu .nav li .sub-menu {
+    display: block;
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+    left: 0;
+    padding: 0 0 0 100px;
+  }
+}
+/* line 228, ../components/sass/custom.scss */
 header.header-page .top-header .menu .nav li .sub-menu li {
   display: block;
   height: auto;
@@ -272,37 +308,37 @@ header.header-page .top-header .menu .nav li .sub-menu li {
   margin-right: 21px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
-/* line 200, ../components/sass/custom.scss */
+/* line 235, ../components/sass/custom.scss */
 header.header-page .top-header .menu .nav li .sub-menu li:last-child {
   border-bottom: 0;
 }
-/* line 204, ../components/sass/custom.scss */
+/* line 239, ../components/sass/custom.scss */
 header.header-page .top-header .menu .nav li .sub-menu li a {
   line-height: normal;
   margin-left: -21px;
   margin-right: -21px;
   padding: 20px 25px;
 }
-/* line 210, ../components/sass/custom.scss */
+/* line 245, ../components/sass/custom.scss */
 header.header-page .top-header .menu .nav li .sub-menu li a:hover, header.header-page .top-header .menu .nav li .sub-menu li a:active {
   border: 0;
   margin: 0 -21px 0 -21px;
   color: #1bb0ac;
 }
-/* line 216, ../components/sass/custom.scss */
+/* line 251, ../components/sass/custom.scss */
 header.header-page .top-header .menu .nav li .sub-menu li a:hover::before {
   display: none;
 }
-/* line 225, ../components/sass/custom.scss */
+/* line 260, ../components/sass/custom.scss */
 header.header-page .top-header .menu .nav li:hover > ul {
   display: block;
 }
-/* line 232, ../components/sass/custom.scss */
+/* line 267, ../components/sass/custom.scss */
 header.header-page .bottom-header {
   font-family: "Open Sans";
   font-weight: 300;
 }
-/* line 236, ../components/sass/custom.scss */
+/* line 271, ../components/sass/custom.scss */
 header.header-page .bottom-header h1 {
   font-size: 60px;
   color: #fff;
@@ -310,14 +346,22 @@ header.header-page .bottom-header h1 {
   margin: 121px auto 0 auto;
   text-align: center;
 }
-@media screen and (max-width: 767px) {
-  /* line 236, ../components/sass/custom.scss */
+@media screen and (max-width: 1024px) {
+  /* line 271, ../components/sass/custom.scss */
   header.header-page .bottom-header h1 {
-    font-size: 20px;
+    font-size: 40px;
+    width: 100%;
+    margin: 71px auto 0 auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  /* line 271, ../components/sass/custom.scss */
+  header.header-page .bottom-header h1 {
+    font-size: 30px;
     width: 100%;
   }
 }
-/* line 250, ../components/sass/custom.scss */
+/* line 290, ../components/sass/custom.scss */
 header.header-page .bottom-header p {
   font-size: 16px;
   color: #9fa6c2;
@@ -325,15 +369,23 @@ header.header-page .bottom-header p {
   margin: 19px auto 0 auto;
   text-align: center;
 }
+@media screen and (max-width: 1024px) {
+  /* line 290, ../components/sass/custom.scss */
+  header.header-page .bottom-header p {
+    font-size: 20px;
+    width: 100%;
+    padding: 0 auto;
+  }
+}
 @media screen and (max-width: 767px) {
-  /* line 250, ../components/sass/custom.scss */
+  /* line 290, ../components/sass/custom.scss */
   header.header-page .bottom-header p {
     font-size: 15px;
     width: 100%;
     padding: 0 auto;
   }
 }
-/* line 263, ../components/sass/custom.scss */
+/* line 308, ../components/sass/custom.scss */
 header.header-page .bottom-header a {
   display: block;
   font-size: 14px;
@@ -350,7 +402,7 @@ header.header-page .bottom-header a {
   background: transparent;
   border: 1px solid #1bb0ac;
 }
-/* line 280, ../components/sass/custom.scss */
+/* line 325, ../components/sass/custom.scss */
 header.header-page .bottom-header div.line {
   width: 1px;
   height: 129px;
@@ -358,7 +410,7 @@ header.header-page .bottom-header div.line {
   margin: 117px auto 0 auto;
   position: relative;
 }
-/* line 287, ../components/sass/custom.scss */
+/* line 332, ../components/sass/custom.scss */
 header.header-page .bottom-header div.line::before {
   content: '\f111';
   font: normal normal normal 4px/1 FontAwesome;
@@ -367,7 +419,7 @@ header.header-page .bottom-header div.line::before {
   top: 0;
   margin: -1px 0 0 -2px;
 }
-/* line 295, ../components/sass/custom.scss */
+/* line 340, ../components/sass/custom.scss */
 header.header-page .bottom-header div.line::after {
   content: '\f111';
   font: normal normal normal 4px/1 FontAwesome;
@@ -377,14 +429,14 @@ header.header-page .bottom-header div.line::after {
   margin: 0 0 -1px -2px;
 }
 
-/* line 309, ../components/sass/custom.scss */
+/* line 354, ../components/sass/custom.scss */
 section.advantages div.container div.entry-header {
   height: 468px;
   font-family: "Open Sans";
   font-weight: 300;
   position: relative;
 }
-/* line 317, ../components/sass/custom.scss */
+/* line 362, ../components/sass/custom.scss */
 section.advantages div.container div.entry-header .bglogo {
   width: 268px;
   height: 503px;
@@ -392,7 +444,7 @@ section.advantages div.container div.entry-header .bglogo {
   position: absolute;
   top: -35px;
 }
-/* line 326, ../components/sass/custom.scss */
+/* line 371, ../components/sass/custom.scss */
 section.advantages div.container div.entry-header h1 {
   font-size: 60px;
   color: #fff;
@@ -401,15 +453,23 @@ section.advantages div.container div.entry-header h1 {
   padding-top: 20px;
   text-align: center;
 }
+@media screen and (max-width: 1024px) {
+  /* line 371, ../components/sass/custom.scss */
+  section.advantages div.container div.entry-header h1 {
+    font-size: 40px;
+    width: 100%;
+    padding: 0;
+  }
+}
 @media screen and (max-width: 767px) {
-  /* line 326, ../components/sass/custom.scss */
+  /* line 371, ../components/sass/custom.scss */
   section.advantages div.container div.entry-header h1 {
     font-size: 30px;
     width: 100%;
     padding: 0;
   }
 }
-/* line 342, ../components/sass/custom.scss */
+/* line 392, ../components/sass/custom.scss */
 section.advantages div.container div.entry-header p {
   font-size: 16px;
   line-height: 30px;
@@ -418,14 +478,14 @@ section.advantages div.container div.entry-header p {
   margin: 90px auto 0 auto;
   text-align: center;
 }
-@media screen and (max-width: 767px) {
-  /* line 342, ../components/sass/custom.scss */
+@media screen and (max-width: 1024px) {
+  /* line 392, ../components/sass/custom.scss */
   section.advantages div.container div.entry-header p {
     width: 100%;
     padding: 0;
   }
 }
-/* line 356, ../components/sass/custom.scss */
+/* line 406, ../components/sass/custom.scss */
 section.advantages div.container div.our-prod {
   position: relative;
   font-family: "Open Sans";
@@ -433,37 +493,43 @@ section.advantages div.container div.our-prod {
   background: #fff;
   height: 505px;
 }
-/* line 363, ../components/sass/custom.scss */
+@media screen and (max-width: 1249px) {
+  /* line 406, ../components/sass/custom.scss */
+  section.advantages div.container div.our-prod {
+    height: auto;
+  }
+}
+/* line 417, ../components/sass/custom.scss */
 section.advantages div.container div.our-prod h1 {
   font-size: 60px;
   color: #2a5285;
-  width: 40%;
+  width: 100%;
   padding: 106px 728px 0 95px;
   text-align: left;
 }
-@media screen and (max-width: 767px) {
-  /* line 363, ../components/sass/custom.scss */
+@media screen and (max-width: 1249px) {
+  /* line 417, ../components/sass/custom.scss */
   section.advantages div.container div.our-prod h1 {
     font-size: 30px;
     width: 90%;
     padding: 5%;
   }
 }
-/* line 377, ../components/sass/custom.scss */
+/* line 431, ../components/sass/custom.scss */
 section.advantages div.container div.our-prod p {
   font-size: 16px;
   line-height: 30px;
   color: #828799;
   padding: 43px 728px 0 107px;
 }
-@media screen and (max-width: 767px) {
-  /* line 377, ../components/sass/custom.scss */
+@media screen and (max-width: 1249px) {
+  /* line 431, ../components/sass/custom.scss */
   section.advantages div.container div.our-prod p {
     width: 90%;
     padding: 5%;
   }
 }
-/* line 391, ../components/sass/custom.scss */
+/* line 445, ../components/sass/custom.scss */
 section.advantages div.container div.our-prod div.video {
   position: absolute;
   right: 0;
@@ -471,10 +537,30 @@ section.advantages div.container div.our-prod div.video {
   width: 728px;
   height: 500px;
   background: url("../img/video.png");
-  display: none;
+}
+@media screen and (max-width: 1249px) {
+  /* line 445, ../components/sass/custom.scss */
+  section.advantages div.container div.our-prod div.video {
+    position: relative;
+    top: 0;
+    width: 728px;
+    height: 500px;
+    background-size: cover;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  /* line 445, ../components/sass/custom.scss */
+  section.advantages div.container div.our-prod div.video {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+  }
 }
 
-/* line 405, ../components/sass/custom.scss */
+/* line 477, ../components/sass/custom.scss */
 section.supply-partners h1 {
   font-family: "Open Sans";
   font-size: 60px;
@@ -483,28 +569,37 @@ section.supply-partners h1 {
   text-align: center;
   padding-top: 86px;
 }
+@media screen and (max-width: 1024px) {
+  /* line 477, ../components/sass/custom.scss */
+  section.supply-partners h1 {
+    font-size: 40px;
+    width: 100%;
+    padding: 10%;
+    padding-bottom: 0;
+  }
+}
 @media screen and (max-width: 767px) {
-  /* line 405, ../components/sass/custom.scss */
+  /* line 477, ../components/sass/custom.scss */
   section.supply-partners h1 {
     font-size: 30px;
     width: 100%;
     padding: 5%;
-    padding-bottom: 100px;
+    padding-bottom: 0;
   }
 }
-/* line 420, ../components/sass/custom.scss */
+/* line 498, ../components/sass/custom.scss */
 section.supply-partners div.commercial {
   background: url("../img/msbg.png");
   background-size: cover;
   height: 630px;
 }
 @media screen and (max-width: 767px) {
-  /* line 420, ../components/sass/custom.scss */
+  /* line 498, ../components/sass/custom.scss */
   section.supply-partners div.commercial {
     height: auto;
   }
 }
-/* line 428, ../components/sass/custom.scss */
+/* line 506, ../components/sass/custom.scss */
 section.supply-partners div.commercial div.supply {
   display: inline-block;
   width: 20%;
@@ -514,17 +609,20 @@ section.supply-partners div.commercial div.supply {
   text-align: center;
 }
 @media screen and (max-width: 767px) {
-  /* line 428, ../components/sass/custom.scss */
+  /* line 506, ../components/sass/custom.scss */
   section.supply-partners div.commercial div.supply {
     display: block;
     width: 100%;
     left: 0;
-    margin: 0;
+    margin-top: 0;
+    margin-top: 80px;
   }
 }
-/* line 442, ../components/sass/custom.scss */
+/* line 521, ../components/sass/custom.scss */
 section.supply-partners div.commercial div.supply a {
   display: block;
+  position: absolute;
+  width: 100%;
   margin: 42px 0 143px 0;
   font-size: 24px;
   color: #295182;
@@ -533,46 +631,47 @@ section.supply-partners div.commercial div.supply a {
   line-height: 53px;
 }
 @media screen and (max-width: 767px) {
-  /* line 442, ../components/sass/custom.scss */
+  /* line 521, ../components/sass/custom.scss */
   section.supply-partners div.commercial div.supply a {
     margin: 0;
+    position: relative;
   }
 }
-/* line 455, ../components/sass/custom.scss */
+/* line 536, ../components/sass/custom.scss */
 section.supply-partners div.commercial div.supply a:hover {
   border: 1px solid #1bb0ac;
   margin: 41px -1px 141px -1px;
   color: #1bb0ac;
 }
 @media screen and (max-width: 767px) {
-  /* line 455, ../components/sass/custom.scss */
+  /* line 536, ../components/sass/custom.scss */
   section.supply-partners div.commercial div.supply a:hover {
     margin: 0;
   }
 }
-/* line 468, ../components/sass/custom.scss */
+/* line 549, ../components/sass/custom.scss */
 section.supply-partners div.our-partners {
   height: 535px;
   background: #fff;
 }
 @media screen and (max-width: 767px) {
-  /* line 468, ../components/sass/custom.scss */
+  /* line 549, ../components/sass/custom.scss */
   section.supply-partners div.our-partners {
     height: auto;
   }
 }
-/* line 476, ../components/sass/custom.scss */
+/* line 557, ../components/sass/custom.scss */
 section.supply-partners div.our-partners h1 {
   padding-top: 106px;
   padding-bottom: 60px;
 }
 @media screen and (max-width: 767px) {
-  /* line 476, ../components/sass/custom.scss */
+  /* line 557, ../components/sass/custom.scss */
   section.supply-partners div.our-partners h1 {
     padding: 70px 0 30px 0;
   }
 }
-/* line 485, ../components/sass/custom.scss */
+/* line 566, ../components/sass/custom.scss */
 section.supply-partners div.our-partners div.partner {
   display: inline-block;
   width: 23%;
@@ -583,18 +682,18 @@ section.supply-partners div.our-partners div.partner {
   line-height: 200px;
 }
 @media screen and (max-width: 767px) {
-  /* line 485, ../components/sass/custom.scss */
+  /* line 566, ../components/sass/custom.scss */
   section.supply-partners div.our-partners div.partner {
     width: 23%;
-    left: 0;
+    left: 2%;
   }
 }
-/* line 500, ../components/sass/custom.scss */
+/* line 581, ../components/sass/custom.scss */
 section.supply-partners div.our-partners div.partner img {
   vertical-align: middle;
 }
 
-/* line 509, ../components/sass/custom.scss */
+/* line 590, ../components/sass/custom.scss */
 footer div.contact-us {
   font-family: "Open Sans";
   color: #fff;
@@ -602,8 +701,9 @@ footer div.contact-us {
   padding: 0;
   padding-bottom: 70px;
   background: url("../img/contactus-bg.png");
+  background-size: cover;
 }
-/* line 519, ../components/sass/custom.scss */
+/* line 601, ../components/sass/custom.scss */
 footer div.contact-us form h1 {
   font-size: 60px;
   font-weight: 300;
@@ -612,7 +712,7 @@ footer div.contact-us form h1 {
   padding-bottom: 63px;
 }
 @media screen and (max-width: 767px) {
-  /* line 519, ../components/sass/custom.scss */
+  /* line 601, ../components/sass/custom.scss */
   footer div.contact-us form h1 {
     font-size: 30px;
     width: 100%;
@@ -620,19 +720,19 @@ footer div.contact-us form h1 {
     padding: 50px 0 20px 0;
   }
 }
-/* line 534, ../components/sass/custom.scss */
+/* line 616, ../components/sass/custom.scss */
 footer div.contact-us form div.form-item {
   height: 55px;
   position: relative;
   margin-bottom: 15px;
 }
 @media screen and (max-width: 767px) {
-  /* line 534, ../components/sass/custom.scss */
+  /* line 616, ../components/sass/custom.scss */
   footer div.contact-us form div.form-item {
     height: auto;
   }
 }
-/* line 543, ../components/sass/custom.scss */
+/* line 625, ../components/sass/custom.scss */
 footer div.contact-us form div.form-item h2 {
   font-size: 24px;
   display: inline-block;
@@ -644,7 +744,7 @@ footer div.contact-us form div.form-item h2 {
   margin-right: 194px;
 }
 @media screen and (max-width: 767px) {
-  /* line 543, ../components/sass/custom.scss */
+  /* line 625, ../components/sass/custom.scss */
   footer div.contact-us form div.form-item h2 {
     display: block;
     margin: 0;
@@ -656,11 +756,11 @@ footer div.contact-us form div.form-item h2 {
     position: relative;
   }
 }
-/* line 566, ../components/sass/custom.scss */
+/* line 648, ../components/sass/custom.scss */
 footer div.contact-us form div.form-item .wpcf7-not-valid-tip {
   text-align: center;
 }
-/* line 571, ../components/sass/custom.scss */
+/* line 653, ../components/sass/custom.scss */
 footer div.contact-us form div.form-item input {
   display: inline-block;
   position: relative;
@@ -674,7 +774,7 @@ footer div.contact-us form div.form-item input {
   background: transparent;
 }
 @media screen and (max-width: 767px) {
-  /* line 571, ../components/sass/custom.scss */
+  /* line 653, ../components/sass/custom.scss */
   footer div.contact-us form div.form-item input {
     width: 98%;
     display: block;
@@ -683,7 +783,7 @@ footer div.contact-us form div.form-item input {
     left: 0;
   }
 }
-/* line 591, ../components/sass/custom.scss */
+/* line 673, ../components/sass/custom.scss */
 footer div.contact-us form div.form-item input::-webkit-input-placeholder {
   font-family: "Open Sans";
   font-size: 14px;
@@ -693,7 +793,7 @@ footer div.contact-us form div.form-item input::-webkit-input-placeholder {
   color: #fff;
   padding-left: 20px;
 }
-/* line 602, ../components/sass/custom.scss */
+/* line 684, ../components/sass/custom.scss */
 footer div.contact-us form div.form-item textarea {
   display: inline-block;
   position: relative;
@@ -704,7 +804,7 @@ footer div.contact-us form div.form-item textarea {
   border-radius: 0;
 }
 @media screen and (max-width: 767px) {
-  /* line 602, ../components/sass/custom.scss */
+  /* line 684, ../components/sass/custom.scss */
   footer div.contact-us form div.form-item textarea {
     width: 98%;
     display: block;
@@ -713,7 +813,7 @@ footer div.contact-us form div.form-item textarea {
     left: 0;
   }
 }
-/* line 621, ../components/sass/custom.scss */
+/* line 703, ../components/sass/custom.scss */
 footer div.contact-us form div.form-item input.submit {
   display: block;
   position: relative;
@@ -726,28 +826,29 @@ footer div.contact-us form div.form-item input.submit {
   font-size: 16px;
   color: #0addbc;
   margin-bottom: 70px;
+  outline: none;
 }
 @media screen and (max-width: 767px) {
-  /* line 621, ../components/sass/custom.scss */
+  /* line 703, ../components/sass/custom.scss */
   footer div.contact-us form div.form-item input.submit {
     margin-top: 25px;
     margin-bottom: 25px;
   }
 }
-/* line 640, ../components/sass/custom.scss */
+/* line 723, ../components/sass/custom.scss */
 footer div.contact-us form div.form-item input[type=text].wpcf7-not-valid,
 footer div.contact-us form div.form-item input[type=email].wpcf7-not-valid,
 footer div.contact-us form div.form-item input[type=tel].wpcf7-not-valid {
   border: 1px solid #ec3c06;
 }
-/* line 647, ../components/sass/custom.scss */
+/* line 730, ../components/sass/custom.scss */
 footer div.contact-us form .wpcf7-response-output {
   position: absolute;
   width: 100%;
   text-align: center;
   border: 0;
 }
-/* line 656, ../components/sass/custom.scss */
+/* line 739, ../components/sass/custom.scss */
 footer div.copyright {
   font-family: 'Open Sans';
   font-size: 16px;
@@ -756,7 +857,7 @@ footer div.copyright {
   color: #868a9a;
 }
 @media screen and (max-width: 767px) {
-  /* line 656, ../components/sass/custom.scss */
+  /* line 739, ../components/sass/custom.scss */
   footer div.copyright {
     font-size: 10px;
   }
